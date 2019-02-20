@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- import CSS -->
+  <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/bootstrap/css/bootstrap-toggle.min.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="r.css">
+  <script src="bn.js"></script>
+  <script src="bignumber.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.js">
+
+  </script>
+<script type="text/javascript">
+	window.addEventListener('load', function () {
+            if (typeof web3 !== 'undefined') {
+                console.log('Web3 Detected! ' + web3.currentProvider.constructor.name)
+                window.web3 = new Web3(web3.currentProvider);
+            } else {
+                console.log('No Web3 Detected... using HTTP Provider')
+                window.web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8081"));
+            }
+        })
+
+</script>
+</head>
+
+<body>
+<div id="myname">
+
+</div>
+<div class="container">
+
+</div>
+
+<!-- Other  -->
+
+<script src="jquery/jquery-3.3.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script src="r.js"></script>
+
+</body>
+</html>
