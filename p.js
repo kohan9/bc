@@ -1,5 +1,5 @@
 //(c) 2018. KoolJ@TesterPRO.org
-
+// COng hoa
 //set the backend api
 var urlapi = "http://192.168.1.130/api.php/";
 var urlall = urlapi+"retail2";
